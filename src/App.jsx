@@ -8,7 +8,7 @@ import NotificationsPage from "./pages/NotificationsPage";
 import CallPage from "./pages/CallPage";
 import Friends from "./pages/Friends";
 import ChatPage from "./pages/ChatPage";
-import OnboardingPage from "./pages/OnboardingPage";
+import OnboardingPage from "./pages/Onboardingpage";
 import { Toaster } from "react-hot-toast";
 import PageLoader from "../PageLoader";
 import useAuthUser from "./hooks/useAuthUser";
