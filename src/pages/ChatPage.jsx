@@ -86,12 +86,12 @@ const ChatPage = () => {
   if (loading || !chatClient || !channel) return <ChatLoader />;
 
   return (
-    <div className="h-[93vh] flex flex-col md:h-[93vh]">
-      <Chat client={chatClient}>
+    <div className="h-[93vh] flex flex-col">
+      <Chat client={chatClient} theme="messaging light">
         <Channel channel={channel}>
           <div className="relative flex-1 w-full">
             {/* Call button - floating on desktop, fixed bottom on mobile */}
-            <div className="absolute top-4 right-4 md:top-4 md:right-4 sm:bottom-4 sm:right-4 sm:absolute md:absolute z-20">
+            <div className="absolute top-4 right-4 sm:bottom-4 sm:right-4 sm:top-auto z-20">
               <CallButton handleVideoCall={handleVideoCall} />
             </div>
 
